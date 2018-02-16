@@ -4,7 +4,7 @@ def valid_move?(board, index)
   if !(index.between?(0, 8)) || !(index.is_a?(Integer)) || index == nil
     false 
   else
-    position_taken?(board, index) 
+    !position_taken?(board, index) 
   end
 end
 
@@ -12,8 +12,8 @@ end
 
 def position_taken?(board, index)
   if (board[index] == "") || (board[index] == " ") || (board[index] == nil)
-    true
-  else (board[index] == "X") || (board[index] == "O")
     false
+  else (board[index] == "X") || (board[index] == "O")
+    true
   end
 end
