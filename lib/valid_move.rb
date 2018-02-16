@@ -6,7 +6,7 @@ def valid_move?(board, index)
     # there's a between method you fool
     false 
   else
-    true 
+    position_taken?(board, index) 
   end
 end
 
