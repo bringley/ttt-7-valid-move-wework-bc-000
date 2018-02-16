@@ -1,6 +1,7 @@
 # code your #valid_move? method here
 
 def valid_move?(board, index)
+<<<<<<< HEAD
   if (index < 0) || (index > 8) || !(index.is_a?(Integer)) || index == nil
     # there's a between method you fool
     false 
@@ -18,3 +19,9 @@ def position_taken?(board, index)
     true
   end
 end
+=======
+  if (index < 0) || (index > 8)
+    true
+  end
+end
+>>>>>>> 93fc0828610c92096cc07c92656c58210dfe5da7
