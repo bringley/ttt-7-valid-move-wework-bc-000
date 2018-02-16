@@ -18,7 +18,3 @@ def position_taken?(board, index)
     true
   end
 end
-  if (index < 0) || (index > 8)
-    true
-  end
-end
