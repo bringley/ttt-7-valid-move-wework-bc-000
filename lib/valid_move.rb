@@ -1,8 +1,7 @@
 # code your #valid_move? method here
 
 def valid_move?(board, index)
-  if (index < 0) || (index > 8) || !(index.is_a?(Integer)) || index == nil
-    # there's a between method you fool
+  if !(index.between?(0, 8) || !(index.is_a?(Integer)) || index == nil
     false 
   else
     position_taken?(board, index) 
